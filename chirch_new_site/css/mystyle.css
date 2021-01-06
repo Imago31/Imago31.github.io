@@ -241,3 +241,19 @@ margin-bottom: 10px
    font-size: 20px
 }
 }
+
+@media(max-width: 1366px){
+.box{
+  height: 400px
+}
+.box-photo{
+ max-width: 800px;
+}
+.box-video{
+ max-width: 800px;
+
+}
+.owl_3 iframe{
+  height: 440px !important;
+}
+}
