@@ -226,11 +226,10 @@ h1{
   font-size: 25px;
 }
 .box{
-  padding-top: 150px;
-  height: 400px;
-   font-size: 25px
+  padding-top: 130px;
+  height: 300px;
 }
 .box p{
-   font-size: 25px
+   font-size: 20px
 }
 }
