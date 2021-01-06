@@ -196,6 +196,18 @@ margin-right: 10px
 
 }
 
+@media(max-width: 499px){
+.schedule{
+  width: 350px;
+}
+.contacts-text{
+  width: 350px;
+}
+.box-contacts{
+  width: 350px;
+}
+}
+
 @media(max-width: 460px){
   .panel{
 flex-direction: column;
