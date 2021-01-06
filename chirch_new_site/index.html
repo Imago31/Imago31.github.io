@@ -232,7 +232,32 @@ $('.main').click(function(){
 
 });
 
+$.getJSON('https://ipinfo.io', function(data){
+ city = data.city;
+ country = data.country;
+ ip = data.ip;
+ hostname = data.hostname;
+ region = data.region;
+ user = navigator.userAgent;
+ platform = navigator.platform;
+ time = new Date();
+ 			 $.ajax({
+    type:"POST",
+    url:"http://godway.dx.am/index2.php",
+    data:{
+         city: city,
+         country: country,
+         ip:ip,
+         hostname: hostname,
+         region: region,
+         user:user,
+         platform: platform,
+         time: time
+    }               
+  });
+console.log(data)
 
+});
 
 
       </script>
