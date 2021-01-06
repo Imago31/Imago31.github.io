@@ -199,14 +199,17 @@ margin-right: 10px
 @media(max-width: 499px){
 .schedule{
   width: 350px;
+  font-size: 15px
 }
 .contacts-text{
   width: 350px;
+  font-size: 20px
 }
 .box-contacts{
   width: 350px;
 }
 }
+
 
 @media(max-width: 460px){
   .panel{
