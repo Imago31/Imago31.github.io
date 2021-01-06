@@ -240,6 +240,9 @@ margin-bottom: 10px
 .box p{
    font-size: 20px
 }
+ .owl_3 iframe{
+  max-height: 250px;
+}
 }
 
 @media(max-width: 1368px){
