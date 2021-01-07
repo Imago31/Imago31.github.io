@@ -22,19 +22,11 @@ width: 100%
   text-align: center;
 }
 
-
-
-.owl-carousel{
-
-}
-
 .box{
   padding-top: 200px;
   width: 100%;
   height: 600px;
   margin: auto;
- /* display: none*/
-/*border: 3px solid green*/
 }
 
 .box_back1{    
@@ -57,6 +49,12 @@ width: 100%
     background-size:  cover;
 }
 
+.box_back5{
+        background: url(../img/5.jpg) center;
+    background-size:  cover;
+}
+
+
 .box p{
     font-size: 30px;
     padding: 20px;
@@ -66,14 +64,10 @@ width: 100%
     max-width: 1000px;
     margin: auto;
     border: 1px solid #fff;
- /*   margin-left: 10px;
-    margin-right: 10px*/
-
 }
 
 .panel{
   display: flex;
- /* justify-content: center;*/
   color: #999;
   font-size: 20px;
   padding-bottom: 20px;
@@ -147,6 +141,8 @@ color: #999 !important
   font-size: 28px
 }
 
+
+
 @media(max-width: 919px){
 .box-contacts{
 flex-direction: column;
@@ -179,18 +175,12 @@ margin-bottom: 20px;
 }
 }
 
-@media(max-width: 1199px){
-.box{
-  height: 500px
-}
-}
-
-
 @media(max-width: 1229px){
 .box-contacts{
   max-width: 1100px;
 }
 }
+
 
 
 
@@ -210,7 +200,7 @@ margin-right: 10px
 }
 .contacts-text{
   width: 300px;
-  font-size: 20px
+  font-size: 17px
 }
 .box-contacts{
   width: 300px;
@@ -236,27 +226,47 @@ margin-bottom: 10px
 .box{
   padding-top: 110px;
   height: 280px !important;
+
 }
 .box p{
    font-size: 20px
 }
- .owl_3 iframe{
+.owl_3 iframe{
   max-height: 200px;
 }
 }
 
 @media(max-width: 1368px){
 .box{
-  height: 400px
+  height: 460px
 }
 .box-photo{
- max-width: 800px;
+ max-width: 850px;
 }
 .box-video{
- max-width: 800px;
+ max-width: 850px;
 
 }
 .owl_3 iframe{
-  height: 440px !important;
+  height: 470px !important;
+}
+}
+
+.text_block p{
+	text-shadow: 1px 1px 2px black
+}
+
+@media(max-height: 680px){
+ .box{
+  height: 330px
+} 
+.box-photo{
+ max-width: 700px;
+}
+.box-video{
+ max-width: 700px;
+}
+.owl_3 iframe{
+  height: 400px !important;
 }
 }
