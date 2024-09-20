@@ -1,143 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name='freelancehunt' content='892f7364414bea3' />
-  <link rel="stylesheet" type="text/css" href="bootstrap.css">
-    <title>RubenS</title>
-    <style>
-        a{
-            text-decoration: none
-        }
-
-.card:hover{
-
-  border: 2px solid white;
-  transform: scale(1.1);
-  transition: 1s
-}
-       
-
-
-
-        .w3-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
-        .w3-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
-        .w3-animate-bottom{position:relative;animation:animatebottom 1.2s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
-        .w3-animate-top{position:relative;animation:animatetop 0.8s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
-    </style>
+  <meta charset="UTF-8">
+  <!-- <link rel="stylesheet" href="css/w3.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <title>RubenS</title>
 </head>
-<body  style="background: url(18.jpg)fixed center; background-size: cover">
-	<div id="norm" class="container">
-		<div  class="row">
-   <div id="r" class="col-lg-8">
 
-   		<h1 class="m-3 text-white text-center w3-animate-top" style="opacity: 0.8; font-family: comic sans ms">RubenS</h1>
+<body  style="background: url(pics/18.jpg)fixed center; background-size: cover">
+<div class="back"></div>
+	<div  class="wrap">
+		<div  class="main_block">
 
-   	<div id="ru" class=" border w3-animate-left w3-animate-left" style="opacity:0.8;background: #778899 " >
+      <div class="block_left">
+        <div class="block_left_box">
+          <p class="left_box_title">Ruben Sarkisyan</p>
+          <div class="left_box_text">
+              <img class="avatar" src="pics/rr.jpg">
+              <p class="avatar_title">Web-Entwickler</p>
+              <p class="box_text">
+                Hallo zusammen. Dies ist meine Seite mit einer 
+                Zusammenfassung meiner Webentwicklungsfähigkeiten, 
+                Hobbys, etc. Unter der Schaltfläche könnt ihr einige
+                meiner Hausaufgaben sehen, die ich im Rahmen eines 
+                Webentwicklungskurses meiner Firma, für die ich bereits arbeitete,
+                  gemacht habe.
+                  Vielen Dank für Ihre Aufmerksamkeit
+              </p>
+          </div>
+          <div class="buutons_block">
+            <button class="tasks" type="button">Aufgabenbeispiele</button>
+            <div class="tasks_box w3-animate-top closed">
+              <a class="task_link" href="https://imago31.github.io/skypro-frontend-ruben-sarkisyan/">Laden web-seit</a>
+              <a class="task_link" href="https://imago31.github.io/sarkisyan-frontend-game/">Die Spiele</a>
+              <a class="task_link" href="https://imago31.github.io/sarkisyn-frontend-git/">Das Kartenspiel</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-   		<img class="m-2 rounded-circle border"  src="rr.jpg" style="width: 20%">
-   	<div class="container" style="">
-   		<p class="text-white  pull-right" style=" text-indent: 15px;font-size:20px">Полигон для тестирования собственных разработок сайтов и веб-приложений на основе HTML, CSS, JavaScript, Jquery, PHP и MySql</p>
+      <div class="block_right">
+        <div class="block_right_box">
+          <p class="right_box_title">Kenntnisse und Fähigkeiten</p>
+          <div class="right_box_text">
+            <div class="subject_box">
+              <p class="subject_box_title">Web-Entwicklung</p>
+              <p class="subject_box_text">
+                Gute Kenntnisse in HTML, CSS, JavaScript, jQuery
+              </p>
+              <p class="subject_box_text">
+                Grundkenntnisse in PHP, MySql, Wordpress, React, Git
+              </p>
+            </div>
+            <div class="subject_box">
+              <p class="subject_box_title">Betriebssysteme</p>
+              <p class="subject_box_text">
+                Windows, Linux (Systeminstallation, -konfiguration,
+                Fehlerbehebung)
+              </p>
+            </div>
+            <div class="subject_box">
+              <p class="subject_box_title">Sprachen</p>
+              <p class="subject_box_text">
+                Russisch - Muttersprache
+              </p>
+              <p class="subject_box_text">
+                Englisch - Intermediate
+              </p>
+              <p class="subject_box_text">
+                Deutsch - B1
+              </p>
+            </div>
+            <div class="subject_box">
+              <p class="subject_box_title">Sonstiges</p>
+              <p class="subject_box_text">
+                Deutsche Führerschein (Klasse B)
+              </p>
+            </div>
+            <div class="subject_box">
+              <p class="subject_box_title">Hobbys</p>
+              <p class="subject_box_text">
+                Malen, Sprachen lernen, Sport machen, Fahrrad fahren
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<h1 id="rrr"></h1>
-    	</div>
-
-
-   </div>
-
-
-
-   </div>
-    <div id="l" class="col-lg-4" onclick="ll">
-
-
-    <h2 class="m-3 text-white  w3-animate-top text-center" style="opacity: 0.8">Мои проекты</h2>
-
-<div class="m-2 p-2 card bg-dark text-white w3-animate-right" style="opacity: 0.8">
-       <a href="https://imago31.github.io/alarm_note_Desktop_app/" style="text-decoration: none;color: white">
-
-  <h3 class="">Alarm_note</h3>
-  <p>Программа для создания оповещений на определенное время для своевременного звонка клиентам</p></a>
-</div>
-
-
-     <div class="m-2 p-2 card  bg-succes text-white w3-animate-right" style="opacity: 0.8;background: #A0522D">
-      <a href="http://rubensark.zzz.com.ua/DataBoxManager/" style="text-decoration: none;color: white">
-  <h3 class="">DataBoxManager</h3>
-  <p>Веб приложение для сохранения информации по работе и удобного поиска в дальнейшем</p></a>
-</div>
-
-<div class="m-2 p-2 card  bg-succes text-white w3-animate-right" style="opacity: 0.8;background: #778899">
-      <a href="http://rubensark.zzz.com.ua/time/" style="text-decoration: none;color: white">
-  <h3 class="">Время в разных зонах</h3>
-  <p>Приложение для просмотра времени в разных зонах, чтобы знать когда нельзя звонить клиентам</p></a>
-</div>
-     
-     <div class="m-2 p-2 card  bg-succes text-white w3-animate-right" style="opacity: 0.8;background: grey">
-      <a href="https://rubensark.000webhostapp.com/" style="text-decoration: none;color: white">
-  <h3 class="">SkyengDay 2019</h3>
-  <p>Проект для участия в творчеcком конкурсе в честь дня рождения школы Skyeng</p></a>
-</div>
-
-     </div>
     </div>
-</div>
-    <div id="foot" class="col-sm-12 p-2  bg-dark text-white w3-animate-bottom" style="position: absolute; bottom: 0;opacity: 0.7">
 
-      <h3 class="text-center">xaker201301@gmail.com</h3>
-
+    <div class="footer">
+      <p class="footer_text">sarkisyan3182@gmail.com</p>
     </div>
 
-<script type="text/javascript">
-document.getElementById('r').style="transform:scale(0.5)"
-document.getElementById('l').style="transform:scale(0.5)"
-	setTimeout(ru,300)
-setTimeout(end,2000)
-function ru() {
-	document.getElementById('r').style="transform:scale(1) rotate(1800deg); transition: 1s"
-  document.getElementById('l').style="transform:scale(1) rotate(360deg); transition: 1.5s"
-
-
-}
-function end() {
-	l.style="position: fixed;right: 0;  top: 0;height:100%; background: black; opacity:0.8; border:1px solid red; z-index:; transition: 2s"
-	r.style="position: fixed;left: 0;  top: 0;height:100%; background: black; opacity:0.8; border:1px solid blue; z-index:; transition: 2s"
-foot.style="border: 1px solid orange; position: absolute; bottom: 0;opacity: 0.7"
-document.getElementById('ru').style="width:80%; margin: auto; background: none"
-
-
-if(window.innerWidth<=992){
-  document.getElementById('r').style="position:relative; width:100%; height:auto; background: black; opacity:0.8; border:1px solid red; transition:2s"
-  document.getElementById('l').style=" position:relative;width:100%; height:auto;background: black; opacity:0.8; border:1px solid blue; padding-bottom:30px; transition:2s"
-    foot.style="position:relative;border: 1px solid orange; opacity: 0.7"
-}
-}
-
-window.addEventListener("resize", function(){
-if(window.innerWidth<=992){
- document.getElementById('r').style="position:relative; width:100%; height:auto; background: black; opacity:0.8; border:1px solid red; transition:2s"
-  document.getElementById('l').style=" position:relative;width:100%; height:auto;background: black; opacity:0.8; border:1px solid blue; padding-bottom:30px; transition:2s"
-    foot.style="position:relative;border: 1px solid orange; opacity: 0.7"
- }
- if(window.innerWidth>=992){
- l.style="position: fixed;right: 0;  top: 0;height:100%; background: black; opacity:0.8; border:1px solid red; cursor: pointer; z-index:; transition: 2s"
-	r.style="position: fixed;left: 0;  top: 0;height:100%; background: black; opacity:0.8; border:1px solid blue; cursor: pointer; z-index:; transition: 2s"
-foot.style="border: 1px solid orange; position: absolute; bottom: 0;opacity: 0.7"
-document.getElementById('ru').style="width:80%; margin: auto; background: none"
- }
-})
-
-/*norm.onclick=function () {
-
-r.style="transform:rotate(360deg); transition:2s"
-l.style="transform:rotate(360deg); transition:2s"
-}
-*/
-
-
-
-</script>
-
+  </div> 
+  
+<script src="js/script.js"></script>
 
 </body>
 </html>
