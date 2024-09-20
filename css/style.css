@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #4682B4 black;
+  }
+
+.back{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    background: black; 
+    opacity:0.8; 
+    
+}
+
+.wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5000;
+}
+
+.main_block{
+    display: flex;
+    height: 100vh;
+  
+}
+
+
+.block_left{
+    border: 1.5px solid #1E90FF;
+    width: 60%;
+    transition: 2s;
+}
+
+.block_left_box{
+    margin: auto; 
+    margin-top: 50px;
+    width:80%; 
+}
+
+.left_box_title{
+    font-size: 36px;
+}
+.left_box_text{
+    border: 1.5px solid #1E90FF; 
+    margin-top: 15px;
+    padding: 20px;
+    max-height: 70vh;
+    overflow: auto;
+}
+
+.avatar_box{
+    display: flex;
+}
+
+.avatar{
+    border: 1.5px solid #ffffff;
+    width: 20%;
+    float: left;
+    margin-right: 15px;
+}
+
+.avatar_title{
+    font-size: 34px;
+    margin-left: 15px;
+    color: #1E90FF;
+    
+}
+
+.box_text{
+    font-size: 18px;
+    margin-top: 10px;
+    
+}
+
+.block_right{
+    border: 1.5px solid #1E90FF;  
+    width: 40%;
+    transition: 2s
+}
+
+.block_right_box{
+    margin: auto; 
+    margin-top: 50px;
+    width:80%; 
+}
+
+
+.right_box_title{
+    font-size: 36px;
+}
+
+.right_box_text{
+    border: 1.5px solid #1E90FF; 
+    margin-top: 15px;
+    padding: 20px;
+    max-height: 70vh;
+    overflow: auto;
+}
+
+.subject_box{
+    margin-bottom: 15px;
+}
+
+.subject_box_title{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #1E90FF;
+}
+
+.subject_box_text{
+    margin-top: 5px;
+
+}
+
+.footer{
+    border: 1.5px solid #1E90FF; 
+    position: absolute; 
+    width: 100%;
+    height: 50px;
+    left: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0.9;
+    z-index: 3000;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.tasks{
+    border: 1.5px solid #00FF00;
+    width: 200px;
+    height: 50px;
+    color: #ffffff;
+    background: none;
+    margin-top: 30px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.tasks:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 15px #00FF00;
+}
+
+.tasks_box{
+    margin-top: 20px;
+    padding: 20px;
+    border: 1.5px solid #00FF00;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.task_link{
+    margin-bottom: 10px;
+    
+}
+
+.w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.w3-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.w3-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.w3-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.w3-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.w3-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.w3-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.w3-animate-input{transition:width 0.4s ease-in-out}.w3-animate-input:focus{width:100%!important}
+
+@media(max-width: 946px){
+    .main_block{
+       flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .block_left{
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    .block_right{
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    .footer{
+        position: relative;
+    }
+    .left_box_title, .right_box_title{
+        font-size: 32px;
+    }
+    .avatar_title{
+        font-size: 30px;
+    }
+}
