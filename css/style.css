@@ -143,8 +143,8 @@ body {
 }
 
 
-.tasks{
-    border: 1.5px solid #00FF00;
+.tasks_button{
+    border: 1.5px solid #1E90FF;
     width: 200px;
     height: 50px;
     color: #ffffff;
@@ -154,15 +154,15 @@ body {
     transition: 0.5s;
 }
 
-.tasks:hover{
+.tasks_button:hover{
     cursor: pointer;
-    box-shadow: 2px 2px 15px #00FF00;
+    box-shadow: 2px 2px 15px #1E90FF;
 }
 
 .tasks_box{
     margin-top: 20px;
     padding: 20px;
-    border: 1.5px solid #00FF00;
+    border: 1.5px solid #1E90FF;
     display: flex;
     flex-direction: column;
     display: none;
@@ -170,7 +170,9 @@ body {
 
 .task_link{
     margin-bottom: 10px;
-    
+}
+.task_link:hover{
+    color: #1E90FF;
 }
 
 .w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}

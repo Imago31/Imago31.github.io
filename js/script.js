@@ -1,7 +1,7 @@
-const tasks = document.querySelector(".tasks");
+const tasks_button = document.querySelector(".tasks_button");
 const tasks_box = document.querySelector(".tasks_box");
 
-tasks.addEventListener("click", function(){
+tasks_button.addEventListener("click", function(){
   if(tasks_box.classList.contains("closed")){
     tasks_box.style = "display: flex";
     tasks_box.classList.remove("closed");
