@@ -180,6 +180,21 @@ body {
     transition: .2s;
 }
 
+.cmd{
+    position: absolute;
+    left: 20px;
+    bottom: 60px;
+    z-index: 777000;
+}
+
+.numbers{
+    margin-top: 10px;
+}
+
+.numbers span{
+    color: rgb(139, 138, 138);
+}
+
 .w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
 .w3-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
 .w3-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
@@ -214,5 +229,9 @@ body {
     }
     .tasks_button{
         width: 100%;
+    }
+
+    .cmd{
+        display: none;
     }
 }
