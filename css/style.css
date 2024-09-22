@@ -19,8 +19,7 @@ body {
     top: 0;
     z-index: 0;
     background: black; 
-    opacity:0.8; 
-    
+    opacity:0.85; 
 }
 
 .wrap{
@@ -41,7 +40,6 @@ body {
 .block_left{
     border: 1.5px solid #1E90FF;
     width: 60%;
-    transition: 2s;
 }
 
 .block_left_box{
@@ -66,7 +64,7 @@ body {
 }
 
 .avatar{
-    border: 1.5px solid #ffffff;
+    box-shadow: 1px 1px 5px #1E90FF;
     width: 20%;
     float: left;
     margin-right: 15px;
@@ -82,13 +80,12 @@ body {
 .box_text{
     font-size: 18px;
     margin-top: 10px;
-    
+    line-height: 25px;
 }
 
 .block_right{
     border: 1.5px solid #1E90FF;  
     width: 40%;
-    transition: 2s
 }
 
 .block_right_box{
@@ -156,23 +153,31 @@ body {
 
 .tasks_button:hover{
     cursor: pointer;
-    box-shadow: 2px 2px 15px #1E90FF;
+    box-shadow: 1px 1px 10px #1E90FF;
 }
 
 .tasks_box{
     margin-top: 20px;
     padding: 20px;
     border: 1.5px solid #1E90FF;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
+    gap: 10px;
     display: none;
 }
 
-.task_link{
-    margin-bottom: 10px;
-}
 .task_link:hover{
     color: #1E90FF;
+    transition: .2s;
+}
+
+.email{
+    text-decoration: none;
+}
+
+.email:hover{
+    color: #1E90FF;
+    transition: .2s;
 }
 
 .w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
@@ -206,5 +211,8 @@ body {
     }
     .avatar_title{
         font-size: 30px;
+    }
+    .tasks_button{
+        width: 100%;
     }
 }
