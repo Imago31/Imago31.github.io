@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="">
+    <title>
+      Interactive website
+    </title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+  </head>
+
+  <body>
+
+    <div class="main_box">
+
+      <div class="header">
+        <h1>Interactive website</h1>
+      </div>
+
+      <!--  carousel -->
+      <div class="owl-carousel owl_1">
+
+        <div class="box box_back1 item">
+          <div class="text_block">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Eum quas minima fugit quibusdam aliquam accusantium voluptatum consequatur,
+              velit sint, necessitatibus saepe amet sunt corporis et tempore ad illo 
+              possimus soluta.
+            </p>
+          </div>
+        </div>
+      
+
+        <div class="box box_back2 item">
+          <div class="text_block">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam. 
+            </p>
+          </div>
+        </div>
+      
+
+        <div class="box box_back3 item">
+          <div class="text_block">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+
+        <div class="box box_back4 item">
+          <div class="text_block">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam. 
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="box_panel">
+      <div class="panel">
+        <button class="main">Main</button>
+        <button class="photo">Photo</button>
+        <button class="video">Video</button>
+        <button class="contacts">Contacts</button>
+      </div>
+
+      <div class="box_photo">
+
+        <div class="owl-carousel owl_2">
+          <div class="item">          
+            <img src="img/1.jpg">
+          </div>
+      
+          <div class="item">         
+            <img src="img/2.jpg">
+          </div>
+      
+          <div class="item">
+            <img src="img/3.jpg">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="box_video">
+
+        <div class="owl-carousel owl_3">
+          <div class="item">          
+            <iframe  src="https://www.youtube.com/embed/D0UnqGm_miA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      
+          <div class="item">         
+            <iframe src="https://www.youtube.com/embed/BadB1z-V_qU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      
+          <div class="item">
+            <iframe src="https://www.youtube.com/embed/xgbJtffxmgY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="box_contacts">
+
+        <div class="contacts_text">
+          <p class="contacts_title">Interactive website</p>
+          <p class="contacts_body">Some nice city,</p>
+          <p class="contacts_body">District 13,</p>
+          <p class="contacts_body">Goodstreet str. 15</p>
+        </div>
+
+        <div class="schedule">
+          <p class="contacts_title">Schedule</p>
+          <p class="contacts_body">Mon-Fri &nbsp;&nbsp; 9:00 - 17:00</p>
+          <p class="contacts_body">Sut &nbsp;&nbsp; 10:00 - 15:00</p>
+          <p class="contacts_body">Sun &nbsp;&nbsp; day off</p>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- end-carousel -->
+
+  <script>
+
+    var owl = $('.owl_1');
+    carousel()
+    function carousel(){
+      $(function(){
+        $(".owl_1");
+        owl.owlCarousel(
+            {
+            loop:true,
+            items:1,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            smartSpeed: 700,
+            }
+        );
+      });
+    }
+
+    var owl2 = $('.owl_2');
+    function carousel2(){
+      $(function(){
+        $(".owl_2");
+        owl2.owlCarousel(
+            {
+            loop:true,
+            items:1,
+            nav:true,
+            center: true,
+            }
+        );
+      });
+    }
+
+    var owl3 = $('.owl_3');
+    function carousel3(){
+      $(function(){
+        $(".owl_3");
+        owl3.owlCarousel(
+            {
+            loop:true,
+            items:1,
+            nav:true,
+            center: true,
+            // stagePadding:20,
+            // margin:20,
+            }
+        );
+      });
+    }
+
+    $('.box').hide(10);
+    $('.box').show(10);
+
+    $('.photo').click(function(){
+      $('.owl_1').slideDown();
+      $('.owl_1').slideUp();
+        setTimeout(function(){$('.box_photo').fadeIn()},500);
+        $('.header').fadeOut(500)
+        carousel2();
+        $('.box_video').hide();
+        $('.box_contacts').hide();
+    });
+
+    $('.video').click(function(){
+      $('.owl_1').slideDown();
+      $('.owl_1').slideUp();
+        setTimeout(function(){$('.box_video').fadeIn()},500);
+        $('.header').fadeOut(500)
+        carousel3();
+        $('.box_photo').hide();
+        $('.box_contacts').hide();
+    });
+
+    $('.box_contacts').hide();
+    $('.contacts').click(function(){
+      $('.owl_1').slideDown();
+      $('.owl_1').slideUp();
+        setTimeout(function(){$('.box_contacts').fadeIn()},500);
+        $('.header').fadeOut(500)
+        carousel3();
+        $('.box_photo').hide();
+        $('.box_video').hide();
+    });
+
+    $('.main').click(function(){
+      $('.owl-carousel').slideDown();
+      $('.box_photo').hide();
+      $('.box_video').hide();
+      $('.box_contacts').hide();
+      $('.header').fadeIn(500);
+    });
+
+  </script>
+
+  </body>
+</html>

@@ -1,16 +1,3 @@
-const tasks_button = document.querySelector(".tasks_button");
-const tasks_box = document.querySelector(".tasks_box");
-
-tasks_button.addEventListener("click", function(){
-  if(tasks_box.classList.contains("closed")){
-    tasks_box.style = "display: flex";
-    tasks_box.classList.remove("closed");
-  }
-  else{
-    tasks_box.classList.add("closed");
-    tasks_box.style = "display: none";
-  }
-})
 
 setTimeout(rotate_blocks,50);
 function rotate_blocks() {
@@ -38,3 +25,41 @@ function cmd_line_start(){
   setTimeout(function(){cmd_line.innerHTML="_"},500);
 }
 setInterval(cmd_line_start,1000);
+
+
+const links = [
+  {name:"Store website",link:"https://imago31.github.io/skypro-frontend-ruben-sarkisyan/", id:"coursetask"},
+  {name:"The game",link:"https://imago31.github.io/sarkisyan-frontend-game/", id:"coursetask"},
+  {name:"The card game",link:"https://imago31.github.io/sarkisyn-frontend-git/", id:"coursetask"},
+  {name:"Youtudrive",link:"https://ruben3182.github.io/youtudrive/", id:"mytask"},
+  {name:"Interactive website",link:"https://imago31.github.io/interactive_website/", id:"mytask"},
+  {name:"Weather-api",link:"https://imago31.github.io/weather-api/", id:"mytask"},
+  {name:"Youtudrive-(React source code)",link:"https://github.com/Imago31/youtudrive-react", id:"myreacttask"},
+]
+
+const tasks_button = document.querySelectorAll(".tasks_button");
+const tasks_box = document.querySelector(".tasks_box");
+
+for(button of tasks_button){
+button.addEventListener("click", function(event){
+  document.querySelector('.modal_block').style="display:flex";
+    const linkBox = links.map(function(item){
+      if(event.target.id == item.id){
+        return `
+          <a class="task_link" href="${item.link}">${item.name}</a>
+          `
+      }
+    })
+  document.querySelector(".links_block").innerHTML =linkBox.join("");
+})
+}
+
+document.querySelector(".close").onclick=function(){
+  document.querySelector('.modal_block').style="display:none";
+}
+document.querySelector(".modal_over").onclick=function(){
+  document.querySelector('.modal_block').style="display:none";
+}
+
+
+
