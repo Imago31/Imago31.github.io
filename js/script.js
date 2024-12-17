@@ -64,5 +64,6 @@ document.querySelector(".modal_over").onclick=function(){
   document.querySelector('.modal_block').style="display:none";
 }
 
-
-
+setTimeout(() => {
+  document.body.style = "background: url(pics/background2.jpg)fixed center; background-size: cover";
+}, 200);
