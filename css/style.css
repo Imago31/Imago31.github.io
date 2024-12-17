@@ -19,7 +19,7 @@ body {
     top: 0;
     z-index: 0;
     background: black; 
-    opacity: 0.9
+    opacity: 0.85
 }
 
 .wrap{
@@ -157,6 +157,22 @@ body {
 }
 
 .tasks_button:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 10px #1E90FF;
+}
+
+.cert_button{
+    border: 1.5px solid #1E90FF;
+    color: #1E90FF;
+    width: 100%;
+    height: 50px;
+    background: none;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.cert_button:hover{
     cursor: pointer;
     box-shadow: 1px 1px 10px #1E90FF;
 }
