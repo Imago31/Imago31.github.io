@@ -33,7 +33,7 @@ const links = [
   {name:"The card game",link:"https://imago31.github.io/sarkisyn-frontend-git/", id:"coursetask"},
   {name:"Youtudrive(React)",link:"https://imago31.github.io/youtudrive-react/", id:"mytask"},
   {name:"Appointment planer(React)",link:"https://imago31.github.io/appointment-planer/", id:"mytask"},
-  {name:"Interactive website",link:"https://imago31.github.io/interactive_website/", id:"mytask"},
+  {name:"Interactive website(jQuery)",link:"https://imago31.github.io/interactive_website/", id:"mytask"},
   {name:"Weather-api",link:"https://imago31.github.io/weather-api/", id:"mytask"},
   {name:"Youtudrive(React source code)",link:"https://github.com/Imago31/youtudrive-react", id:"myreacttask"},
   {name:"Appointment planer(React source code)",link:"https://github.com/Imago31/appointment-planer", id:"myreacttask"},
