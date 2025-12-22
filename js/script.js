@@ -31,7 +31,6 @@ const links = [
   {name:"Store website",link:"https://imago31.github.io/skypro-frontend-ruben-sarkisyan/", id:"coursetask"},
   {name:"The game",link:"https://imago31.github.io/sarkisyan-frontend-game/", id:"coursetask"},
   {name:"The card game",link:"https://imago31.github.io/sarkisyn-frontend-git/", id:"coursetask"},
-  {name:"Youtudrive",link:"https://ruben3182.github.io/youtudrive/", id:"mytask"},
   {name:"Youtudrive(React)",link:"https://imago31.github.io/youtudrive-react/", id:"mytask"},
   {name:"Appointment planer(React)",link:"https://imago31.github.io/appointment-planer/", id:"mytask"},
   {name:"Interactive website",link:"https://imago31.github.io/interactive_website/", id:"mytask"},
